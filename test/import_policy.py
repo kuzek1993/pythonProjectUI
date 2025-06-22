@@ -49,7 +49,8 @@ click_empty = ("xpath", "//div/i[contains(@nztype, 'zone:warning-zone')]")
 wait.until(EC.visibility_of_element_located(click_empty)).click()
 #download_window
 driver.find_element("xpath", "//i[@nztype='toolbar:download']").click()
-driver.find_element("xpath", "//span[@class='ant-radio-button']").click()
+time.sleep(3)
+driver.find_element("xpath", "//span[.//text()=' Загрузить из файла ']").click()
 time.sleep(3)
 #download_new_policy
 driver.find_element("xpath", "//input[@type='file']").send_keys(f"{os.getcwd()}/downloads/policy.xml")
