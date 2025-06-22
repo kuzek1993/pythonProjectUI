@@ -59,10 +59,10 @@ wait.until(EC.element_to_be_clickable(button_import)).click()
 #wait_window_accept_import
 button_accept = ("xpath", "//button/span[text()=' Да, импортировать с перезаписью ']")
 wait.until(EC.visibility_of_element_located(button_accept)).click()
-#wait_close_window
-wait.until(EC.invisibility_of_element_located(button_import))
-print("Политика применена")
-
+#wait_black_window
+black_window = ("xpath", "//div/label[text()='Импортирование прошло успешно']")
+wait.until(EC.visibility_of_element_located(black_window))
+print("Политика импортирована")
 #proverka vod login
 #test_login = driver.find_element("xpath", "//input[@autocomplete='username']").get_attribute("value")
 #print(test_login)
