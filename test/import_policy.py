@@ -64,17 +64,3 @@ wait.until(EC.visibility_of_element_located(button_accept)).click()
 black_window = ("xpath", "//div/label[text()='Импортирование прошло успешно']")
 wait.until(EC.visibility_of_element_located(black_window))
 print("Политика импортирована")
-#proverka vod login
-#test_login = driver.find_element("xpath", "//input[@autocomplete='username']").get_attribute("value")
-#print(test_login)
-
-#driver.find_element("id", "textfield-1013-inputEl").click()
-#driver.find_element("id","textfield-1013-inputEl").clear()
-#driver.find_element("id","textfield-1013-inputEl").send_keys("superadmin")
-#driver.find_element("id","textfield-1017-inputEl").click()
-#driver.find_element("id","textfield-1017-inputEl").clear()
-#driver.find_element("id","textfield-1017-inputEl").send_keys("Zaq1@wsX")
-#driver.find_element_by
-#time.sleep(3)
-#driver.find_element("xpath",u"//*/text()[normalize-space(.)='Войти']/parent::*").click()
-#time.sleep(5)
